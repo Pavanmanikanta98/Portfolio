@@ -8,7 +8,7 @@ export default function SliderCard({ project, index }:any) {
     <>
       <div  className='h-[320px] md:h-[400px] lg:h-[620px]  sm:w-2/3  w-5/6 relative m-auto'>
         <div className="h-full w-full group cursor-all-scroll z-50 relative ">
-          <img src={project.images[0]}
+          <Image  src={project.images[0]}
             className='w-full h-[220px] md:h-[300px] lg:h-[475px]  max-w-[100%] rounded-lg border-[#00474f] border-[2px]'
           />
           <div

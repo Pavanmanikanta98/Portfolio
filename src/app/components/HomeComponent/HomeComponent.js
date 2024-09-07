@@ -146,13 +146,13 @@ export default function HomeComponent() {
           >
             <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
               <Slider {...settings}>
-                <img src="/nextjs.png" alt="Nextjs" className="h-12" />
-                <img src="/reactjs.png" alt="Reactjs" className="h-12" />
-                <img src="/k8s.png" alt="k8s" className="h-12" />
-                <img src="/expressjs.png" alt="Expressjs" className="h-12" />
-                <img src="/docker.png" alt="Docker" className="h-12" />
-                <img src="/nodejs.png" alt="nodejs" className="h-12" />
-                <img src="/mongodb.png" alt="Mongodb" className="h-12" />
+                <Image  src="/nextjs.png" alt="Nextjs" className="h-12" />
+                <Image  src="/reactjs.png" alt="Reactjs" className="h-12" />
+                <Image  src="/k8s.png" alt="k8s" className="h-12" />
+                <Image  src="/expressjs.png" alt="Expressjs" className="h-12" />
+                <Image  src="/docker.png" alt="Docker" className="h-12" />
+                <Image  src="/nodejs.png" alt="nodejs" className="h-12" />
+                <Image  src="/mongodb.png" alt="Mongodb" className="h-12" />
               </Slider>
             </div>
           </div>

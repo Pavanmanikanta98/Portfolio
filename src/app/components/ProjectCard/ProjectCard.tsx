@@ -1,13 +1,14 @@
 'use client'
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const ProjectCard = ({ project }: any) => {
   const router = useRouter();
 
   return (
     <div className="bg-gray-800 text-white flex flex-col justify-center items-center rounded-lg border-[#00474f] border-[2px] w-[520px] h-[400px] relative group">
-      <img 
+      <Image  
         src={project.images[0]} 
         alt={project.name} 
         className="w-full h-full rounded-lg " 

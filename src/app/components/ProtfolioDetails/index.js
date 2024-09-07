@@ -23,7 +23,7 @@ export default function Index({ data, id, DataArray }) {
         <div className='bg-black min-h-screen'>
             <div className='overlay h-[400px] lg:top-[96px] sm:top-0 z-20 '></div>
             <div className='relative'>
-                <img src={data?.images[0]}
+                <Image  src={data?.images[0]}
                     alt='bg photo'
                     className='h-[400px] lg:mt-24 sm:mt-0 object-cover'
                     style={{ width: '100%' }}
@@ -53,7 +53,7 @@ export default function Index({ data, id, DataArray }) {
                     {
                         data?.images.map((item, index) => (
                             <div key={index} className='flex justify-center lg:justify-end items-center'>
-                                <img src={item}
+                                <Image  src={item}
                                     alt='project images'
                                     className='mt-20 rounded-lg'
                                     style={{ width: '100%', height: 'auto' }}
