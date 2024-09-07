@@ -70,7 +70,7 @@ export default function SkillsComp() {
               My name is Pavan. A professional and enthusiastic full-stack
               developer and Programmer. However, I am more than just your average
               programmer or designer. and I was continually coming up with new concepts.
-              I&apos;m very fluid and never stop learning and adapting to new
+              I&#39;m very fluid and never stop learning and adapting to new
               situations.
             </p>
             <p
@@ -90,7 +90,7 @@ export default function SkillsComp() {
               When I encounter a new problem, I usually conduct extensive
               research on it in order to comprehend it and discover cutting-edge
               and innovative approaches for dealing with similar problems in the
-              future. As a result, it&apos;s not unexpected that I&apos;ve listed a lot of
+              future. As a result, it&#39;s not unexpected that I&#39;ve listed a lot of
               abilities here:
             </p>
           </section>

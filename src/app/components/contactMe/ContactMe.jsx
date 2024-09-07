@@ -1,5 +1,5 @@
 'use client'
-import React,{ useState } from "react";
+import React, { useState } from "react";
 
 import { FaLocationDot } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
@@ -103,14 +103,14 @@ export default function Page() {
           <div className="flex flex-col items-center justify-center w-full h-fullbackdrop-brightness-50 ">
             <div className="text-center bg-[#00474f] py-[1px] px-[8px] tracking-wide uppercase font-semibold text-[20px] text-[#0c0c0c] rounded-lg ">
               <a href="#contact" className="cursor-pointer">
-                {" "}
-                Contact Form{" "}
+                
+                Contact Form
               </a>
             </div>
             <div className="mt-[10px]">
               <h1 className="recoletaBold text-5xl text-[#00474f] p-2 text-center tracking-wide ">
-                {" "}
-                Hire Me{" "}
+                
+                Hire Me
               </h1>
             </div>
             <div className="flex justify-center text-center mt-[10px] md:w-[700px] ">

@@ -3,6 +3,7 @@ import React from "react";
 import { Hind } from "next/font/google";
 import Image from "next/image";
 
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import TypingAnimation from './TypingAnimation';
@@ -113,7 +114,7 @@ export default function HomeComponent() {
                     Hi There
                   </p>
                   <h1 className="text-[white] font-recoletaBlack text-7xl md:text-5xl lg:text-8xl xl:text-7xl mt-5 md:mt-3">
-                    I&apos;m Pavan Manikanta
+                    I&#39;m Pavan Manikanta
                   </h1>
                   <h2 className={`relative text-white font-bold uppercase md:text-xl ${hind.className}`}>
                   {/* <TypingAnimation items={['Wed Developer', 'Programmer']} /> */}
@@ -148,7 +149,7 @@ export default function HomeComponent() {
             <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
               <Slider {...settings}>
                 <Image  src="/nextjs.png" alt="Nextjs" className="h-12" />
-                <Image  src="/reactjs.png" alt="Reactjs" className="h-12" />
+                <Image  src="/reactjs.png" alt="Reactjs" className="h-12 w-auto" />
                 <Image  src="/k8s.png" alt="k8s" className="h-12" />
                 <Image  src="/expressjs.png" alt="Expressjs" className="h-12" />
                 <Image  src="/docker.png" alt="Docker" className="h-12" />
