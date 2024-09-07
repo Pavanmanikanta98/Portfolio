@@ -4,7 +4,7 @@ import React,{ useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
-import { FaHeadphones } from "react-icons/fa";
+
 import { FaArrowRight } from 'react-icons/fa'
 
 import { ToastContainer, toast } from 'react-toastify'
@@ -20,7 +20,7 @@ const hind = Hind({
 });
 
 
-export default function page() {
+export default function Page() {
 
   const [state, setState] = useState({
     name: "",
@@ -258,7 +258,7 @@ export default function page() {
             </div> */}
             <div className='font-semibold text-[24px] xl:mt-[260px] -mb-7 text-[#00474f]'>Chat With Live! </div>
             <div >
-              <p className='text-center pt-5 font-[200] text-xl text-[#030303]'>Looking for a talented web developer with a knack for crafting exceptional websites? I also have a solid understanding of LLMs and fine-tuning. Let's bring your vision to life!
+              <p className='text-center pt-5 font-[200] text-xl text-[#030303]'>Looking for a talented web developer with a knack for crafting exceptional websites? I also have a solid understanding of LLMs and fine-tuning. Let&apos;s bring your vision to life!
                 </p>
             </div>
             <div>

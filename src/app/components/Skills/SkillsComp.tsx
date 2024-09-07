@@ -66,17 +66,17 @@ export default function SkillsComp() {
             <p
               className={`w-full lg:w-1/3 text-[#3e6d72] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
-              {" "}
+              
               My name is Pavan. A professional and enthusiastic full-stack
               developer and Programmer. However, I am more than just your average
               programmer or designer. and I was continually coming up with new concepts.
-              I'm very fluid and never stop learning and adapting to new
+              I&apos;m very fluid and never stop learning and adapting to new
               situations.
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#3e6d72] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
-              {" "}
+             
               This attitude propelled me on an endless journey to learn a
               variety of skills, including Teaching skill, UI/UX, design,
               front-end and back-end development, devOps, SEO and optimisations,
@@ -86,11 +86,11 @@ export default function SkillsComp() {
             <p
               className={`w-full lg:w-1/3 text-[#3e6d72] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
-              {" "}
+              
               When I encounter a new problem, I usually conduct extensive
               research on it in order to comprehend it and discover cutting-edge
               and innovative approaches for dealing with similar problems in the
-              future. As a result, it's not unexpected that I've listed a lot of
+              future. As a result, it&apos;s not unexpected that I&apos;ve listed a lot of
               abilities here:
             </p>
           </section>

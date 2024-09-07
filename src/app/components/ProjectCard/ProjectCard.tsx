@@ -10,10 +10,10 @@ const ProjectCard = ({ project }: any) => {
     <div className="bg-gray-800 text-white flex flex-col justify-center items-center rounded-lg border-[#00474f] border-[2px] w-[520px] h-[400px] relative group">
       <Image  
         src={project.images[0]} 
-        alt={project.name} 
+        alt={project.title} 
         className="w-full h-full rounded-lg " 
       />
-      {/* Clickable div */}
+      
       <div
         onClick={() => router.push(`/portfoliodetails/${project.id}`)}
         className="absolute bottom-[30px] md:bottom-[50px] lg:bottom-[70px] left-[8%] transform -translate-x-1/2 rounded-md transition duration-300 cursor-pointer flex items-center justify-center shadow-md hover:shadow-xl hover:bg-[#3c545e] w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 opacity-0 group-hover:opacity-100"

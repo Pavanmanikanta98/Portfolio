@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Hind } from "next/font/google";
+import Image from "next/image";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -112,7 +113,7 @@ export default function HomeComponent() {
                     Hi There
                   </p>
                   <h1 className="text-[white] font-recoletaBlack text-7xl md:text-5xl lg:text-8xl xl:text-7xl mt-5 md:mt-3">
-                    I'm Pavan Manikanta
+                    I&apos;m Pavan Manikanta
                   </h1>
                   <h2 className={`relative text-white font-bold uppercase md:text-xl ${hind.className}`}>
                   {/* <TypingAnimation items={['Wed Developer', 'Programmer']} /> */}

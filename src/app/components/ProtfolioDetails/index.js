@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation';
 import { Hind } from 'next/font/google';
+import Image from 'next/image';
 
 const hind = Hind({
     subsets: ['latin'],

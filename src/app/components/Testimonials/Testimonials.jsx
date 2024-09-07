@@ -10,6 +10,7 @@ import './testimonials.css'
 
 
 import { Hind } from "next/font/google";
+import Image from 'next/image';
 
 const hind = Hind({
   subsets: ["latin"],
@@ -60,7 +61,7 @@ const Testimonials = () => {
             <SwiperSlide key={index}>
               <div className="bg-[#202020] md:bg-[#171717] p-8 rounded-md mx-5 sm:rounded-full shadow-lg">
                 <div className="flex items-center mb-4 pl-5">
-                  <img src={testimonial.image} alt={`${testimonial.name} photo`} className="w-24 h-24 rounded-full border-4 border-black mr-4 text-[#487479]" />
+                  <Image src={testimonial.image} alt={`${testimonial.name} photo`} className="w-24 h-24 rounded-full border-4 border-black mr-4 text-[#487479]" />
                   <div className=''>
                     <h3 className={`"text-xl font-bold text-[#3e6d72] ${hind.className}"`}>{testimonial.name}</h3>
                     <h4 className={`' text-[#26383a] text-sm'`}>{testimonial.role}</h4>
