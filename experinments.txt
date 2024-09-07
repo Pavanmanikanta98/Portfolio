@@ -1,0 +1,66 @@
+// the following code about Portfolio card
+            <div
+              className=" h-[240px] sm:h-[480px] lg:h-[550px] sm:w-2/3 w-5/6 mx-auto  group flex justify-center items-center transition transform-gpu duration-300 ease-in-out cursor-all-scroll bg-no-repeat bg-center border-[#00474f] border-[2px]"
+              key={index}
+              style={{
+                boxShadow: "#0da4b5 5px 15px 20px 5px",
+              }}
+            >
+              <img
+                src={project.images[0]}
+                alt={project.title}
+                className="w-full h-full"
+              />
+              <div
+                className="absolute rounded-lg transition duration opacity-0 group-hover:opacity-100 cursor-pointer bottom-10 left-8 bg-[#232a2b] shadow-accent-color hover:shadow-xl  w-12 h-12 md:w-14 md:h-14 lg:w-24 lg:h-24"
+                onClick={() => router.push(`/portfoliodetails/${project.id}`)}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="w-12 h-12 lg:w-24 lg:h-24 text-[#999]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+              </div>
+              <div
+                className={`absolute bg-transparent bottom-3 text-lg px-5 font-[600] pb-3 z-10 ${hind.className}`}
+              >
+                {project.title}
+              </div>
+            </div> 
+
+
+// following code for home page
+     <div
+          id="aim"
+          className="w-[100%] h-[760px] text-yellow-600 text-8xl "
+          style={{
+            // #00474F  dark  yellow-600  text color text-[#47626D] 
+            // #587073  ligh color;  ultra light #a7d4d9
+            background: 'linear-gradient(123deg, #000000 70%, #587073 30%)',
+            width: "100%",
+          }}
+        >
+          <div className="pt-[150px] text-[#00474F] ml-[200px]">Work Space</div>
+
+          <div
+            className="w-full h-[500px] text-white text-5xl mt-[500px] ml-[1400px]"
+            style={{ transform: "translate(0px,-230px)" }}
+          >
+            Nothing
+          </div>
+        </div> 
