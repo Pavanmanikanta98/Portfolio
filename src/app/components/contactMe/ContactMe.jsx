@@ -20,7 +20,7 @@ const hind = Hind({
 });
 
 
-export default function Page() {
+export default function ContactMe() {
 
   const [state, setState] = useState({
     name: "",
@@ -253,9 +253,7 @@ export default function Page() {
           <div className='absolute h-full w-full bg-gradient-to-t from-[#2d545a] via-[#2d565a] shadow-inner opacity-70'>
           </div>
            <div className='absolute inset-0 flex flex-col gap-[20px] items-center justify-center shadow-lg text-white p-6 '>
-            {/* <div className='text-4xl xl:mt-[250px] mt-0 rounded-full px-[15px] py-[15px] bg-[#202020] text-white'>
-              <FaHeadphones />
-            </div> */}
+            
             <div className='font-semibold text-[24px] xl:mt-[260px] -mb-7 text-[#00474f]'>Chat With Live! </div>
             <div >
               <p className='text-center pt-5 font-[200] text-xl text-[#030303]'>Looking for a talented web developer with a knack for crafting exceptional websites? I also have a solid understanding of LLMs and fine-tuning. Let&apos;s bring your vision to life!
