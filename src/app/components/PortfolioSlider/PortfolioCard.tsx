@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 export default function SliderCard({ project, index }:any) {
   const router = useRouter();
@@ -8,7 +9,7 @@ export default function SliderCard({ project, index }:any) {
     <>
       <div  className='h-[320px] md:h-[400px] lg:h-[620px]  sm:w-2/3  w-5/6 relative m-auto'>
         <div className="h-full w-full group cursor-all-scroll z-50 relative ">
-          <Image  src={project.images[0]}
+          <Image  src={project.images[0]} alt={project.name}
             className='w-full h-[220px] md:h-[300px] lg:h-[475px]  max-w-[100%] rounded-lg border-[#00474f] border-[2px]'
           />
           <div
