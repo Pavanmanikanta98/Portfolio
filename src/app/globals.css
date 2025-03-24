@@ -74,3 +74,63 @@ html {
 }
 
 
+
+@media (min-width: 1280px) {
+    .headerShow{
+        background-color: #090909;
+        box-shadow: -3px 13px 25px 5px #0da4b5;
+
+
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .menu-effect {
+      display: none; /* Hide diamond on mobile */
+    }
+    
+    .project-card {
+      padding: 1.5rem;
+      border-radius: 1rem;
+    }
+  }
+
+
+
+
+
+/* Mobile-first responsive fixes */
+@media (max-width: 640px) {
+    /* Background container adjustments */
+    #something {
+      height: 100vh !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    /* Text adjustments */
+    #something p {
+      font-size: 120px !important;
+      line-height: 1;
+      transform: none !important;
+      padding: 0 20px !important;
+      max-width: unset !important;
+    }
+  
+    /* Content positioning */
+    #something + div.relative.z-10 {
+      margin-top: 50vh !important;
+    }
+  
+    /* Project grid adjustments */
+    .grid-cols-1.sm\:grid-cols-2.md\:grid-cols-3 {
+      grid-template-columns: 1fr !important;
+      gap: 1rem !important;
+    }
+  }

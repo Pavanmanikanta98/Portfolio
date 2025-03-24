@@ -1,13 +1,13 @@
 'use client';
 import React, { useState, useRef } from 'react';
-import { DataArray } from '../../data'; // Ensure this path is correct
+import { WebArray } from '../../data'; // Ensure this path is correct
 import './projectSlider.css';
 import { useRouter } from 'next/navigation';
 
 const ProjectSlider = () => {
   const router = useRouter();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const totalProjects = DataArray.length;
+  const totalProjects = WebArray.length;
   const sliderRef = useRef(null);
   const startX = useRef(0);
   const isDragging = useRef(false);
@@ -23,9 +23,9 @@ const ProjectSlider = () => {
   const getVisibleProjects = () => {
     const startIndex = currentIndex;
     return [
-      DataArray[(startIndex - 1 + totalProjects) % totalProjects],
-      DataArray[startIndex],
-      DataArray[(startIndex + 1) % totalProjects],
+      WebArray[(startIndex - 1 + totalProjects) % totalProjects],
+      WebArray[startIndex],
+      WebArray[(startIndex + 1) % totalProjects],
     ];
   };
 
