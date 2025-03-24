@@ -1,23 +1,24 @@
-
-
 import React from "react";
 import PortfolioDetail from "../../../components/ProtfolioDetails";
+import { WebArray, DataArray } from "@/app/data";
 
-import { DataArray } from "@/app/data";
+const Portfolio = ({ params }) => {
+  const projectId = params.id;
+  const arrayType = projectId[0]; // '5' for web, '6' for data
+  const projectNumber = parseInt(projectId.slice(1), 10);
+  const index = projectNumber - 11; // Convert 511 → 0, 612 → 1, etc.
+  const dataArray = arrayType === '5' ? WebArray : DataArray;
 
-const Portfolio = (props) => {
-    const id = parseInt(props.params.id);
-  //  console.log(id - 511)
-  // console.log(DataArray[id - 511]);
+  if (index < 0 || index >= dataArray.length) {
+    return <div>Project not found</div>;
+  }
 
   return (
-    <div className="">
-      <PortfolioDetail
-        data={DataArray[id - 511]}
-        id={id - 511}
-        DataArray={DataArray}
-      />
-    </div>
+    <PortfolioDetail
+      data={dataArray[index]}
+      id={projectId}
+      relatedProjects={dataArray}
+    />
   );
 };
 

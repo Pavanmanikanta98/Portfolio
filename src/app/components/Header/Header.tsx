@@ -1,6 +1,6 @@
 'use client'
 import React,{useState, useEffect} from 'react'
-import Image from 'next/image'
+import img from 'next/image'
 import Drawer from './DiagonalDrawer'
 import '../Header/DiagonalDrawer.css'
 
@@ -41,14 +41,14 @@ export default function Header() {
         selectIndex1={selectIndex1}
         setSelectedIndex1={setSelectedIndex1} />
     </div>
-    <header className={`${isScrolled ? "headerShow" : ""} w-full fixed top-0 z-50 transition-all duration-500 xl:bg-[#090909] `}
+    <header className={`${isScrolled ? "headerShow" : ""} w-full fixed top-0 z-50 transition-all duration-500 `}
     >
         <div className={'relative'}>
             <div 
             onClick={openDrawer}
             className='z-30 absolute cursor-pointer w-14 h-14 lg:w-24 lg:h-24 bg-[#00474f]  flex justify-center items-center rounded-br-3xl'>
             <div className={'relative w-10 lg:w-[70px] h-10 lg:h-[70px] flex justify-center items-center'}>
-                <Image  src='/menu.png' alt='drawer item' 
+                <img  src='/menu.png' alt='drawer item' 
                 width={56}  // width in pixels (14 * 4 = 56)
                 height={56}
                 />

@@ -16,7 +16,7 @@ export default function DiagonalDrawer({
       <div className="relative">
         <div
           className={`z-50 ${
-            pathname === "/" ? "top-[0px]" : "top-[100px]"
+            pathname === "/" ? "top-[0px]" : "top-[-0px]"
           } cursor-pointer fixed w-14 h-14 lg:w-24 lg:h-24 bg-red-500 flex justify-center items-center rounded-br-3xl`}
         >
           <div
@@ -61,7 +61,7 @@ export default function DiagonalDrawer({
       </div>
       <header
         className={`fixed w-full transition-all duration-500 z-40 ${
-          pathname === "/" ? "top-0" : "top-[-98px]"
+          pathname === "/" ? "top-0" : "top-[0px]"
         }`}
       >
         <div className="z-20 absolute transform-gpu ease-in-out duration-500 transition-all scale-100 -translate-x-none -translate-y-none opacity-100 bg-[#223740] bg-opacity-95 w-full h-screen flex flex-col sm:flex-row lg:flex-col items-center justify-center">

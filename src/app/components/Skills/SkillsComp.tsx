@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Hind } from "next/font/google";
 import { AboutData } from "@/app/data";
-import Image from "next/image";
+import img from "next/image";
 
 import './skills.css'
 
@@ -118,7 +118,7 @@ export default function SkillsComp() {
                   }`}
                 >
                   <div className="w-16 h-16 sm:w-10 sm:h-10  lg:w-16 lg:h-16 text-[#141414]">
-                    <Image 
+                    <img 
                     height={100}
                     width={100}
                     src={item.img} alt="internet issues"/>
