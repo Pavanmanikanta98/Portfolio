@@ -56,10 +56,7 @@ export default function Home() {
             <p
               className={`max-w-2xl md:pl-[80px] px-5 text-[16px] text-[#95b4b8] leading-8 mt-5 ${hind.className}`}
             >
-              Here are a few of my most recent work. As a full-stack web developer, I
-              always enjoy working on my projects, so each one is a new adventure for
-              me. While working on each new project, I attempt to learn new things.
-              As a result, my paintings are always current and one-of-a-kind.
+            Here are a few of my most recent AI/ML and data science projects. Each project is a new adventure, challenging me to explore innovative algorithms and uncover fresh insights from data. With every challenge, I push the boundaries of what's possible, ensuring my solutions remain cutting-edge and uniquely tailored.
             </p>
           </div>
 

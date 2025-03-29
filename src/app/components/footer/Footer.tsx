@@ -25,11 +25,11 @@ export default function Footer() {
           </div>
 
         
-          <div className={`pt-[15px] border-t border-[rgba(0,0,0,0.1)] pb-[8px] ${hind.className}`}>
+          {/* <div className={`pt-[15px] border-t border-[rgba(0,0,0,0.1)] pb-[8px] ${hind.className}`}>
             <span>Copyright</span>
             <strong className="px-1">Pavan Manikanta</strong>
             <span>All Rights Reserved</span>
-          </div>
+          </div> */}
 
          
         </div>
