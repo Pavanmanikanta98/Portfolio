@@ -1,27 +1,24 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 
 import { FaLocationDot } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
 
-import { FaArrowRight } from 'react-icons/fa'
+import { FaArrowRight } from "react-icons/fa";
 
-import { ToastContainer, toast } from 'react-toastify'
+import { ToastContainer, toast } from "react-toastify";
 
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
-
-import { Hind } from 'next/font/google';
+import { Hind } from "next/font/google";
 
 const hind = Hind({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700']
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-
 export default function ContactMe() {
-
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -32,7 +29,6 @@ export default function ContactMe() {
 
   const [loading, setloading] = useState(false);
 
- 
   const handleChange = (e) => {
     const key = e.target.name;
     const value = e.target.value;
@@ -61,9 +57,9 @@ export default function ContactMe() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setloading(true);
-  
+
     let data = { ...state };
-  
+
     try {
       const res = await fetch("/api/contactme/", {
         method: "POST",
@@ -73,10 +69,10 @@ export default function ContactMe() {
         },
         body: JSON.stringify(data),
       });
-  
+
       const response = await res.json();
       console.log(response);
-  
+
       if (res.ok) {
         clearState();
         toast(response.message);
@@ -90,34 +86,26 @@ export default function ContactMe() {
       setloading(false);
     }
   };
-  
 
   return (
-    <div
-    id="contact-me"
-     className=" bg-[#090909] ">
-    
+    <div id="contact-me" className=" bg-[#090909] ">
       <div className="flex flex-col items-center justify-center pt-[40px]  w-full mb-[80px]">
-      <ToastContainer />
-        <div className='flex flex-col items-center justify-center  bg-cover w-full h-[380px] bg-center rounded-xl'>
+        <ToastContainer />
+        <div className="flex flex-col items-center justify-center  bg-cover w-full h-[380px] bg-center rounded-xl">
           <div className="flex flex-col items-center justify-center w-full h-fullbackdrop-brightness-50 ">
             <div className="text-center bg-[#00474f] py-[1px] px-[8px] tracking-wide uppercase font-semibold text-[20px] text-[#0c0c0c] rounded-lg ">
               <a href="#contact" className="cursor-pointer">
-                
                 Contact Form
               </a>
             </div>
             <div className="mt-[10px]">
               <h1 className="recoletaBold text-5xl text-[#00474f] p-2 text-center tracking-wide ">
-                
                 Hire Me
               </h1>
             </div>
             <div className="flex justify-center text-center mt-[10px] md:w-[700px] ">
               <p className="text-[#4b939b] font-[300] text-center text-xl ">
-                Are you looking for a responsible, professinal full-stack
-                developer and designer for your website or your web application
-                projects? Just leave me a message and tell me how I can help.
+              Are you seeking an innovative developer with deep AI/ML expertise to infuse intelligence into your web applications?  Drop me a message, and let's build something extraordinary together.
               </p>
             </div>
           </div>
@@ -126,7 +114,7 @@ export default function ContactMe() {
           <div className="sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-full">
             <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
               <div
-                className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
+                className="flex flex-col py-[35px] px-[35px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
                 style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
               >
                 <div className="flex items-center gap-[15px]">
@@ -144,16 +132,20 @@ export default function ContactMe() {
                   </div>
                 </div>
                 <div className="text-[#171717] hover:text-black">
-                <div>
-                  <p className=""> Nth street, somewhere </p>
-                </div>
-                <div className="">
-                  <p className=""> Nth street, somewhere </p>
-                </div>
+                  <div>
+                    <p className="pt-2">
+                      {" "}
+                      4-64, near the busstand, machara, kapileswarapuram mandal,
+                      Konaseema Dist, Andhra Pradesh - 533309
+                    </p>
+                  </div>
+                  <div className="">
+                    {/* <p className=""> Nth street, somewhere </p> */}
+                  </div>
                 </div>
               </div>
               <div
-                className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
+                className="flex flex-col py-[35px] px-[35px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
                 style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
               >
                 <div className="flex items-center gap-[15px]">
@@ -161,31 +153,28 @@ export default function ContactMe() {
                     <FiPhoneCall size={40} color="#166069" />
                   </div>
 
-                  <div className="flex flex-col">
-                    <div className="text-[#999999] text-[14px]">
-                      <p>24*7 service</p>
-                    </div>
-                    <div className="font-semibold text-[20px] tracking-wide text-[#999999]">
-                      <p> Call Us On:</p>
-                    </div>
+                  <div className="flex flex-col justify-center">
+                    <p className="text-[#999999] text-[14px]">24*7 service</p>
+                    <p className="font-semibold text-[20px] tracking-wide text-[#999999] whitespace-nowrap">
+                      Call Us On:
+                    </p>
                   </div>
                 </div>
                 <div className="text-[#171717] hover:text-black">
-
-               
-                <div className="">
-                  <p className=" text-sm">Mob:+919849XXXX</p>
+                  <div className="">
+                    <p className="pt-4 pl-3 text-base">Mob:+919849297224</p>
+                  </div>
+                  <div className="">
+                    {/* <p className="text-sm ">Tel:+09XXXXXXXX</p> */}
+                  </div>
                 </div>
-                <div className="">
-                  <p className="text-sm ">Tel:+09XXXXXXXX</p>
-                </div>
-              </div>
               </div>
             </div>
+
             <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
               <div
-                 className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
-                 style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
+                className="flex flex-col py-[35px] px-[35px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
+                style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
               >
                 <div className="flex items-center gap-[15px]">
                   <div>
@@ -202,16 +191,16 @@ export default function ContactMe() {
                   </div>
                 </div>
                 <div className=" text-[#171717] hover:text-black ">
-                <div className="pt-2">
-                  <p className=" text-sm"> pavanmanikanta98@gmail.com</p>
-                </div>
-                <div className="">
-                  <p className="text-sm"> cme04408@gmail.com </p>
-                </div>
+                  <div className="pt-3">
+                    <p className=" text-base">pavanmanikanta45@gmail.com </p>
+                  </div>
+                  <div className="">
+                    <p className="text-base"> pavanmanikanta98@gmail.com</p>
+                  </div>
                 </div>
               </div>
               <div
-                className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
+                className="flex flex-col py-[35px] px-[35px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
                 style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
               >
                 <div className="flex items-center gap-[15px]">
@@ -221,7 +210,7 @@ export default function ContactMe() {
 
                   <div className="flex flex-col">
                     <div className="text-[#999999] text-[14px]">
-                      <p>office Hours</p>
+                      <p>Available Hours</p>
                     </div>
                     <div className="font-semibold text-[20px] tracking-wide text-[#999999]">
                       <p> Opening Time </p>
@@ -229,54 +218,58 @@ export default function ContactMe() {
                   </div>
                 </div>
                 <div className="text-[#171717] hover:text-black ">
-
-                
-                <div className="">
-                  <p className=""> Mon - Fri: 9am - 6pm</p>
-                </div>
-                <div className="">
-                  <p className=""> Sat - Sun (Closed) </p>
-                </div>
+                  <div className="">
+                    <p className=""> Mon - Fri: 6am - 10pm</p>
+                  </div>
+                  <div className="">
+                    <p className=""> Sat - Sun (6am - 1PM) </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="contact"
-      
-    
-      className='flex flex-col xl:flex-row justify-center gap-[60px] mt-[10px] px-[30px] max-w-[1105px] mx-auto pb-28 p-10 '>
-        <div className='hidden md:block relative w-[50%] xl:w-[50%] h-[600px] rounded-xl md:w-full lg:w-[50%] bg-center bg-cover'
-        style={{backgroundImage: `url('/Masterfile.jpg')`}}
+
+      <div
+        id="contact"
+        className="flex flex-col xl:flex-row justify-center gap-[60px] mt-[10px] px-[30px] max-w-[1105px] mx-auto pb-28 p-10 "
+      >
+        <div
+          className="hidden md:block relative w-[50%] xl:w-[50%] h-[600px] rounded-xl md:w-full lg:w-[50%] bg-center bg-cover"
+          style={{ backgroundImage: `url('/Masterfile.jpg')` }}
         >
-          <div className='absolute h-full w-full bg-gradient-to-t from-[#2d545a] via-[#2d565a] shadow-inner opacity-70'>
-          </div>
-           <div className='absolute inset-0 flex flex-col gap-[20px] items-center justify-center shadow-lg text-white p-6 '>
-            
-            <div className='font-semibold text-[24px] xl:mt-[260px] -mb-7 text-[#00474f]'>Chat With Live! </div>
-            <div >
-              <p className='text-center pt-5 font-[200] text-xl text-[#030303]'>Looking for a talented web developer with a knack for crafting exceptional websites? I also have a solid understanding of LLMs and fine-tuning. Let&apos;s bring your vision to life!
-                </p>
+          <div className="absolute h-full w-full bg-gradient-to-t from-[#2d545a] via-[#2d565a] shadow-inner opacity-70"></div>
+          <div className="absolute inset-0 flex flex-col gap-[20px] items-center justify-center shadow-lg text-white p-6 ">
+            <div className="font-semibold text-[24px] xl:mt-[260px] -mb-7 text-[#00474f]">
+              Chat With Live!{" "}
+            </div>
+            <div>
+              <p className="text-center pt-5 font-[200] text-xl text-[#030303]">
+              Are you seeking an AI/ML expert with hands-on experience in NLP, LLM fine-tuning, and a solid foundation in web development? Let's turn your vision into reality.
+              </p>
             </div>
             <div>
               {/* <button className={`bg-[#00474f] text-white mb-[30px] px-4 py-2 hover:bg-[#223740] transition-color rounded-xl `}>Let's Chat </button> */}
               <FaArrowRight size={40} color="#c0d2d4" />
             </div>
-           </div>
+          </div>
         </div>
-        <div className='flex flex-col gap-[20px] border-[2px] border-[#00474f] p-5 rounded-lg'>
-          <div className='text-center w-[100px] bg-red-500 py-[1px] tracking-wide uppercase font-300 font-sans text-[14px] text-white rounded-lg  '>
-             Contact Us
+        <div className="flex flex-col gap-[20px] border-[2px] border-[#00474f] p-5 rounded-lg">
+          <div className="text-center w-[100px] bg-red-500 py-[1px] tracking-wide uppercase font-300 font-sans text-[14px] text-white rounded-lg  ">
+            Contact Us
           </div>
           <div>
-            <p className={'text-[30px] text-[#004f4f] recoletaBold'}> Request A Call  Back Free To Reach &  Contact Us </p>
+            <p className={"text-[30px] text-[#004f4f] recoletaBold"}>
+              {" "}
+              Request A Call Back Free To Reach & Contact Us{" "}
+            </p>
           </div>
-          <form className='flex flex-col gap-[20px]'
-          onSubmit={handleSubmit}
-          >
-            <div className={`flex flex-col sm:flex-row gap-[20px] ${hind.className}`}>
-            <input
+          <form className="flex flex-col gap-[20px]" onSubmit={handleSubmit}>
+            <div
+              className={`flex flex-col sm:flex-row gap-[20px] ${hind.className}`}
+            >
+              <input
                 type="text"
                 name="name"
                 placeholder="Your Name.."
@@ -286,49 +279,53 @@ export default function ContactMe() {
                 className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200 text-black"
               />
               <input
-              type='email'
-              name='email'
-              placeholder='Your email..'
-              onChange={handleChange}
-              value={state.email}
-              required
-              className='px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200 text-black '
+                type="email"
+                name="email"
+                placeholder="Your email.."
+                onChange={handleChange}
+                value={state.email}
+                required
+                className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200 text-black "
               />
             </div>
-            <div className={`flex flex-col sm:flex-row gap-[20px] ${hind.className}`}>
+            <div
+              className={`flex flex-col sm:flex-row gap-[20px] ${hind.className}`}
+            >
               <input
-              type='text'
-              name='phoneNumber'
-              placeholder='Your phoneNumber..'
-              onChange={handlePhoneChange}
-              value={state.phoneNumber}
-              required
-              className='px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200 text-black'
+                type="text"
+                name="phoneNumber"
+                placeholder="Your phoneNumber.."
+                onChange={handlePhoneChange}
+                value={state.phoneNumber}
+                required
+                className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200 text-black"
               />
               <input
-              type='text'
-              name='subject'
-              placeholder='Your subject..'
-              onChange={handleChange}
-              value={state.subject}
-              required
-              className='px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200 text-black '
+                type="text"
+                name="subject"
+                placeholder="Your subject.."
+                onChange={handleChange}
+                value={state.subject}
+                required
+                className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200 text-black "
               />
             </div>
             <div className={`${hind.className} gap-[]`}>
               <textarea
-              name='message'
-              placeholder='Your message..'
-              onChange={handleChange}
-              value={state.message}
-              required
-              className='px-[12px] outline-none rounded-md py-[12px] h-[190px] flex-1 w-full bg-gray-200 text-black'
+                name="message"
+                placeholder="Your message.."
+                onChange={handleChange}
+                value={state.message}
+                required
+                className="px-[12px] outline-none rounded-md py-[12px] h-[190px] flex-1 w-full bg-gray-200 text-black"
               />
             </div>
             <div>
-              <button className='bg-[#074747] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#00474f] transition-colors duration-300 font-semibold text-black rounded-lg'>   {loading ? "Dropping..." : "Drop Me a Message"} </button>
+              <button className="bg-[#074747] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#00474f] transition-colors duration-300 font-semibold text-black rounded-lg">
+                {" "}
+                {loading ? "Dropping..." : "Drop Me a Message"}{" "}
+              </button>
             </div>
-
           </form>
         </div>
       </div>

@@ -94,13 +94,25 @@ export default function HomeComponent() {
           >
             <div className="lg:py-10 md:py-6 sm:py-6 ">
               <Slider {...settings}>
+             
+              <img src="/pd.png" alt="pandas" className="h-14 " />
+              <img src="/np.png" alt="Numpy" className="h-14" />
+              
+              <img src="/sk.png" alt="sk-learn" className="h-14 " />
+              <img src="/mp.png" alt="Nextjs" className="h-14" />
+              <img src="/sns.png" alt="seaborn" className="h-14" />
+              <img src="/tf.png" alt="tensorflow" className="h-14" />
+              <img src="/py.png" alt="pytorch" className="h-14" />
+              <img src="/lc1.png" alt="langchain" className="h-14 p-1" />
+              <img src="/hf.png" alt="Nextjs" className="h-14" />
                 <img src="/nextjs.png" alt="Nextjs" className="h-14" />
                 <img src="/reactjs.png" alt="Reactjs" className="h-14" />
-                <img src="/k8s.png" alt="k8s" className="h-14" />
                 <img src="/expressjs.png" alt="Expressjs" className="h-14" />
                 <img src="/docker.png" alt="Docker" className="h-14" />
                 <img src="/nodejs.png" alt="Nodejs" className="h-14" />
+                
                 <img src="/mongodb.png" alt="MongoDB" className="h-14" />
+                <img src="/ps.png" alt="MongoDB" className="h-14" />
               </Slider>
             </div>
           </div>

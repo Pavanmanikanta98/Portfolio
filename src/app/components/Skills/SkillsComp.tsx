@@ -60,39 +60,23 @@ export default function SkillsComp() {
             About My Self
           </h1>
           <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#3e6d72] text-2xl mb-10 px-5 md:px-24">
-            Knack of Building application with frontend and backend operation
-          </h4>
+          I craft solutions that push boundaries and unlock new possibilities.          </h4>
           <section className="relative flex flex-col lg:flex-row px-5 md:px-24">
             <p
               className={`w-full lg:w-1/3 text-[#3e6d72] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
+              I'm Pavan Manikanta, driven by a deep passion for AI and machine learning. I love building intelligent systems that extract meaningful insights from complex data, and I relish working on projects involving advanced predictive analytics, natural language processing, and deep learning.
               
-              My name is Pavan. A professional and enthusiastic full-stack
-              developer and Programmer. However, I am more than just your average
-              programmer or designer. and I was continually coming up with new concepts.
-              I&apos;m very fluid and never stop learning and adapting to new
-              situations.
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#3e6d72] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
-             
-              This attitude propelled me on an endless journey to learn a
-              variety of skills, including Teaching skill, UI/UX, design,
-              front-end and back-end development, devOps, SEO and optimisations,
-              server management, product design, software design, database
-              design, and many more...
+              Alongside my focus on AI, I bring a broad technical background to the table. I'm skilled in web development, database management, containerization with Docker, and setting up CI/CD pipelines—enabling me to create cutting-edge AI solutions that integrate smoothly into full-scale, production-ready systems.
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#3e6d72] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
-              
-              When I encounter a new problem, I usually conduct extensive
-              research on it in order to comprehend it and discover cutting-edge
-              and innovative approaches for dealing with similar problems in the
-              future. As a result, it&apos;s not unexpected that I&apos;ve listed a lot of
-              abilities here:
-            </p>
+Whenever I face a new challenge, I dive deep into research to understand it thoroughly and discover cutting-edge strategies to address similar issues in the future. As a result, I've honed a diverse array of abilities to tackle any problem head-on                          </p>
           </section>
         </div>
       </div>
@@ -110,7 +94,7 @@ export default function SkillsComp() {
               {AboutData.map((item, index) => (
                 <a key={index}
                   onClick={() => handleCardClick(item, index)}
-                  style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
+                  // style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
                   className={`relative cursor-pointer transition-all transform duration-300 group rounded-xl center p-6 lg:p-10 flex flex-col justify-center  items-center hover:text-white ${
                     selectedIndex == index
                       ? " -translate-y-2 bg-[#476571]"

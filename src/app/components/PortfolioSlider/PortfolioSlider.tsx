@@ -7,7 +7,7 @@ import "swiper/swiper-bundle.css";
 import { Autoplay, Pagination } from "swiper/modules";
 
 import { useRouter } from "next/navigation";
-import { WebArray } from "../../data";
+import { DataArray } from "../../data";
 
 import { Hind } from "next/font/google";
 import PortfolioCard from "./PortfolioCard";
@@ -19,7 +19,7 @@ const hind = Hind({
 
 const PortfolioSlider = () => {
   const router = useRouter();
-  // console.log(WebArray);
+  // console.log(DataArray);
 
   return (
     <div className="container m-auto">
@@ -36,7 +36,7 @@ const PortfolioSlider = () => {
         pagination={{ clickable: true }}
         className="mx-4"
       >
-        {WebArray.map((project, index) => (
+        {DataArray.map((project, index) => (
           <SwiperSlide key={index}>
 
             <PortfolioCard project={project} index={index} />
