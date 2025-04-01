@@ -21,6 +21,10 @@ export default function HomeComponent() {
       cursor: true,
       loop: true, 
     })
+      .type("AI Engineer") // Type the first string
+      .pause(1000) // Pause before deletion
+      .delete() // Delete the typed string
+      .pause(500) 
       .type("Web Developer") // Type the first string
       .pause(1000) // Pause before deletion
       .delete() // Delete the typed string
