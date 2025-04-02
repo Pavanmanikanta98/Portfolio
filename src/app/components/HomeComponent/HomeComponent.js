@@ -12,33 +12,32 @@ const hind = Hind({
 });
 
 export default function HomeComponent() {
-  const typeItRef = useRef(null); 
+  const typeItRef = useRef(null);
 
   useEffect(() => {
     const instance = new TypeIt(typeItRef.current, {
-      speed: 120, 
-      deleteSpeed: 60, 
+      speed: 120,
+      deleteSpeed: 60,
       cursor: true,
-      loop: true, 
+      loop: true,
     })
-      .type("AI Engineer") // Type the first string
-      .pause(1000) // Pause before deletion
-      .delete() // Delete the typed string
-      .pause(500) 
-      .type("Web Developer") // Type the first string
-      .pause(1000) // Pause before deletion
-      .delete() // Delete the typed string
-      .pause(500) // Pause before typing the next word
-      .type("Programmer") // Type the second string
-      .pause(1000) // Pause again
-      .delete() // Delete the second string
-      .go(); // Start the animation
+      .type("AI Engineer")
+      .pause(1000)
+      .delete()
+      .pause(500)
+      .type("Web Developer")
+      .pause(1000)
+      .delete()
+      .pause(500)
+      .type("Programmer")
+      .pause(1000)
+      .delete()
+      .go();
 
-    // Cleanup on unmount
     return () => {
-      instance.destroy(); // Destroy the TypeIt instance on unmount
+      instance.destroy();
     };
-  }, []); // Empty dependency array means this runs only once when the component is mounted
+  }, []);
 
   const settings = {
     infinite: true,
@@ -61,16 +60,25 @@ export default function HomeComponent() {
 
   return (
     <>
-      {/* <Header /> */}
-      <div id="home" className="relative flex w-full h-screen md:h-[85vh] bg-cover bg-center">
+      <div
+        id="home"
+        className="relative flex w-full h-screen sm:h-[85vh] md:h-[85vh] lg:h-[85vh] bg-cover bg-center"
+      >
         <div className="absolute inset-0 bg-[#090909] backdrop-brightness-50 flex items-center justify-center">
           <div className="container mx-auto flex flex-col items-center justify-center text-center">
             <div className="text-container">
-              <p className="text-[#00474F] text-4xl md:text-base lg:text-2xl">Hi There</p>
-              <h1 className="text-white font-recoletaBlack text-7xl mt-5">I&apos;m Pavan Manikanta</h1>
-              <h2 className={`relative text-white font-bold text-center uppercase md:text-xl ${hind.className}`} style={{ color: "#999" }}>
+              <p className="text-[#00474F] text-lg md:text-xl lg:text-2xl">
+                Hi There
+              </p>
+              <h1 className="text-white font-recoletaBlack text-4xl md:text-5xl lg:text-6xl">
+                I'm Pavan Manikanta
+              </h1>
+              <h2
+                className={`relative text-white font-bold uppercase text-md md:text-lg lg:text-xl ${hind.className}`}
+              >
                 <span ref={typeItRef}></span>
               </h2>
+
               <div className="flex flex-col md:flex-row justify-center gap-6 mt-8 items-center">
                 <a
                   href="/#portfolio"
@@ -93,28 +101,25 @@ export default function HomeComponent() {
         {/* Slider Section */}
         <div className="absolute inset-x-0 bottom-0 container mx-auto px-3">
           <div
-            className="relative max-w-sm bottom-[70px] h-[65px] md:h-[120px]  md:max-w-5xl overflow-auto mx-auto bg-[#e1e1e1] rounded-2xl z-20"
-            style={{ boxShadow: "#0da4b5 -5px 15px 30px 4px" }}
+            className="relative max-w-sm bottom-[70px] md:max-w-xl lg:max-w-5xl xl:max-w-6xl lg:px-14 overflow-auto mx-auto bg-[#e1e1e1] rounded-2xl z-20"
+            style={{ boxShadow: "#0da4b5 -3px 10px 15px 2px" }}
           >
-            <div className="lg:py-10 md:py-6 sm:py-6 ">
+            <div className="py-4 md:py-6">
               <Slider {...settings}>
-             
-              <img src="/pd.png" alt="pandas" className="h-14 " />
-              <img src="/np.png" alt="Numpy" className="h-14" />
-              
-              <img src="/sk.png" alt="sk-learn" className="h-14 " />
-              <img src="/mp.png" alt="Nextjs" className="h-14" />
-              <img src="/sns.png" alt="seaborn" className="h-14" />
-              <img src="/tf.png" alt="tensorflow" className="h-14" />
-              <img src="/py.png" alt="pytorch" className="h-14" />
-              <img src="/lc1.png" alt="langchain" className="h-14 p-1" />
-              <img src="/hf.png" alt="Nextjs" className="h-14" />
+                <img src="/pd.png" alt="pandas" className="h-14" />
+                <img src="/np.png" alt="Numpy" className="h-14" />
+                <img src="/sk.png" alt="sk-learn" className="h-14" />
+                <img src="/mp.png" alt="Nextjs" className="h-14" />
+                <img src="/sns.png" alt="seaborn" className="h-14" />
+                <img src="/tf.png" alt="tensorflow" className="h-14" />
+                <img src="/py.png" alt="pytorch" className="h-14" />
+                <img src="/lc1.png" alt="langchain" className="h-14 p-1" />
+                <img src="/hf.png" alt="Nextjs" className="h-14" />
                 <img src="/nextjs.png" alt="Nextjs" className="h-14" />
                 <img src="/reactjs.png" alt="Reactjs" className="h-14" />
                 <img src="/expressjs.png" alt="Expressjs" className="h-14" />
                 <img src="/docker.png" alt="Docker" className="h-14" />
                 <img src="/nodejs.png" alt="Nodejs" className="h-14" />
-                
                 <img src="/mongodb.png" alt="MongoDB" className="h-14" />
                 <img src="/ps.png" alt="MongoDB" className="h-14" />
               </Slider>
