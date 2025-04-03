@@ -30,14 +30,14 @@ export default function Home() {
       <HomeComponent />
       <div
   id="portfolio"
-  className="mt-0 pt-0 -mb-40"
+  className="mt-0 pt-0 -mb-60"
   style={{
     backgroundImage: "linear-gradient(-65deg, #141414 0% 45%, #090909 0% 100%)",
     width: "100%",
     padding: 0,
   }}
 >
-  <div className="container mx-auto flex flex-col md:flex-row md:items-start gap-7 md:gap-12 lg:gap-36 xl:gap-60 2xl:gap-96">
+  <div className="container mx-auto flex flex-col md:flex-row md:items-start lg:pl-20 gap-7 md:gap-12 lg:gap-36 xl:gap-60 2xl:gap-96">
     {/* Left Section - Recent Works */}
     <div className="flex-1">
       <p
@@ -88,7 +88,7 @@ export default function Home() {
 
   {/* Adjusting the space for the Portfolio Slider */}
   <div
-    className="mt-12 mb-0"
+    className="mt-12 md:mt-7 mb-0"
     style={{ transform: "translate(0px, -320px)" }}
   >
     <PortfolioSlider />

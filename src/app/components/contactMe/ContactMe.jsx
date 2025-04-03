@@ -115,7 +115,7 @@ export default function ContactMe() {
             <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
               <div
                 className="flex flex-col py-[35px] px-[35px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
-                style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
+                style={{ boxShadow: "#0da4b5 -3px 10px 15px 2px" }}
               >
                 <div className="flex items-center gap-[15px]">
                   <div>
@@ -146,7 +146,7 @@ export default function ContactMe() {
               </div>
               <div
                 className="flex flex-col py-[35px] px-[35px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
-                style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
+                style={{ boxShadow: "#0da4b5 -3px 10px 15px 2px" }}
               >
                 <div className="flex items-center gap-[15px]">
                   <div>
@@ -174,7 +174,7 @@ export default function ContactMe() {
             <div className="flex flex-col flex-1 xl:flex-row gap-[20px] mt-[20px] sm:mt-0">
               <div
                 className="flex flex-col py-[35px] px-[35px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
-                style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
+                style={{ boxShadow: "#0da4b5 -3px 10px 15px 2px" }}
               >
                 <div className="flex items-center gap-[15px]">
                   <div>
@@ -201,7 +201,7 @@ export default function ContactMe() {
               </div>
               <div
                 className="flex flex-col py-[35px] px-[35px] rounded-lg shadow-lg cursor-pointer transition-all tansform duration-500 hover:bg-[#476571] hover:text-black hover:-translate-y-4 bg-[#36454F]"
-                style={{ boxShadow: "#0da4b5 -5px  10px 20px 0px" }}
+                style={{ boxShadow: "#0da4b5 -3px 10px 15px 2px" }}
               >
                 <div className="flex items-center gap-[15px]">
                   <div>
