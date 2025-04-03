@@ -46,7 +46,7 @@ export default function Header() {
         <div className={'relative'}>
             <div 
             onClick={openDrawer}
-            className='z-30 absolute cursor-pointer w-14 h-14 lg:w-24 lg:h-24 bg-[#00474f]  flex justify-center items-center rounded-br-3xl'>
+            className='z-30 absolute cursor-pointer w-14 h-14 lg:w-20 lg:h-20 bg-[#00474f]  flex justify-center items-center rounded-br-3xl'>
             <div className={'relative w-10 lg:w-[70px] h-10 lg:h-[70px] flex justify-center items-center'}>
                 <img  src='/menu.png' alt='drawer item' 
                 width={56}  // width in pixels (14 * 4 = 56)
@@ -57,8 +57,8 @@ export default function Header() {
             </div>
         </div>
         {/* <h1 className="text-7xl">Testing the header</h1> */}
-        <nav className="invisible xl:visible xl:max-w-4xl 2xl:max-w-7xl mx-auto ">
-            <ul className="flex font-recoletaBlack flex-row items-center h-24">
+        <nav className="invisible xl:visible xl:max-w-4xl 2xl:max-w-6xl mx-auto ">
+            <ul className="flex font-recoletaBlack flex-row items-center h-20">
 
                 <li className="group text-2xl relative font-bold mr-20">
                     {selectIndex1 === 0 ? (

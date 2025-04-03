@@ -29,9 +29,9 @@ export default function HomeComponent() {
       .pause(1000)
       .delete()
       .pause(500)
-      .type("Programmer")
-      .pause(1000)
-      .delete()
+      // .type("Programmer")
+      // .pause(1000)
+      // .delete()
       .go();
 
     return () => {
@@ -70,7 +70,7 @@ export default function HomeComponent() {
               <p className="text-[#00474F] text-lg md:text-xl lg:text-2xl">
                 Hi There
               </p>
-              <h1 className="text-white font-recoletaBlack text-4xl md:text-5xl lg:text-6xl">
+              <h1 className="text-white font-recoletaBlack text-4xl md:text-4xl lg:text-5xl">
                 I'm Pavan Manikanta
               </h1>
               <h2
@@ -101,10 +101,10 @@ export default function HomeComponent() {
         {/* Slider Section */}
         <div className="absolute inset-x-0 bottom-0 container mx-auto px-3">
           <div
-            className="relative max-w-sm bottom-[70px] md:max-w-xl lg:max-w-5xl xl:max-w-6xl lg:px-14 overflow-auto mx-auto bg-[#e1e1e1] rounded-2xl z-20"
+            className="relative max-w-sm bottom-[70px] md:max-w-xl lg:max-w-4xl xl:max-w-5xl lg:px-14 overflow-auto mx-auto bg-[#e1e1e1] rounded-2xl z-20"
             style={{ boxShadow: "#0da4b5 -3px 10px 15px 2px" }}
           >
-            <div className="py-4 md:py-6">
+            <div className="py-3 md:py-4">
               <Slider {...settings}>
                 <img src="/pd.png" alt="pandas" className="h-14" />
                 <img src="/np.png" alt="Numpy" className="h-14" />

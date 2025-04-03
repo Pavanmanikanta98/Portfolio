@@ -30,7 +30,7 @@ const PortfolioSlider = () => {
         loop={true}
         speed={999}
         autoplay={{
-          delay: 3000,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
