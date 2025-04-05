@@ -41,7 +41,7 @@ export default function Home() {
     {/* Left Section - Recent Works */}
     <div className="flex-1">
       <p
-        className="text-[300px] text-[#141414] md:pl-[50px] px-5 max-w-[750px] w-full overflow-hidden"
+        className="text-[300px] text-[#141414] md:pl-[5px] px-5 max-w-[750px] w-full overflow-hidden"
         style={{ transform: "translate(0px, -100px)" }}
       >
         portfolio
@@ -50,11 +50,11 @@ export default function Home() {
       <div className="flex flex-col md:flex-row md:items-start gap-7 md:gap-12 lg:gap-32 xl:gap-60 2xl:gap-96">
     {/* Recent Works Section */}
     <div>
-      <p className="text-[#00474F] -pt-5 md:pl-[80px] px-5 font-extrabold text-5xl">
+      <p className="text-[#00474F] -pt-5 md:pl-[40px] px-5 font-extrabold text-5xl">
         Recent Works
       </p>
       <p
-        className={`max-w-2xl md:pl-[80px] px-5 text-[16px] text-[#95b4b8] leading-8 mt-5 ${hind.className}`}
+        className={`max-w-2xl md:pl-[40px] px-5 text-[16px] text-[#95b4b8] leading-8 mt-5 ${hind.className}`}
       >
         Here are a few of my most recent AI/ML and data science projects. Each project is a new adventure, challenging me to explore innovative algorithms and uncover fresh insights from data. With every challenge, I push the boundaries of what's possible, ensuring my solutions remain cutting-edge and uniquely tailored.
       </p>

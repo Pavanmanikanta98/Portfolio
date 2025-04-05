@@ -31,7 +31,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div id="testimonials" className="bg-[#090909] py-[110px]">
-      <div className="container mx-auto text-center mb-12 md:px-24 lg:px-40 xl:px-48">
+      <div className="container mx-auto text-center mb-12 md:px-20 lg:px-28 xl:px-32">
         <h2 className={`text-5xl font-extrabold mb-4 text-[#00474F] ${hind.className}`}>
           Endorsements
         </h2>
@@ -40,7 +40,7 @@ const Testimonials = () => {
         </p>
       </div>
 
-      <div className="container mx-auto md:px-24 lg:px-40 xl:px-48">
+      <div className="container mx-auto md:px-20 lg:px-28 xl:px-32">
         <Swiper
           modules={[Autoplay, Pagination]}
           loop={true}
@@ -53,14 +53,14 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
               <div className="bg-[#202020] md:bg-[#171717] p-8 rounded-md mx-5 sm:rounded-full shadow-lg">
-                <div className="flex items-center lg:pl-14 mb-4 pl-5">
+                <div className="flex items-center mb-4 pl-5">
                   <img 
                     src={testimonial.image} 
                     alt={`${testimonial.name} photo`} 
                     className="w-24 h-24 rounded-full border-1 mr-4 text-[#487479]" 
                   />
                   <div>
-                    <h3 className={`text-xl font-bold  text-[#1b3e42] ${hind.className}`}>
+                    <h3 className={`text-xl font-bold text-[#1b3e42] ${hind.className}`}>
                       {testimonial.name}
                     </h3>
                     <h4 className="text-[#284042] text-sm">
@@ -69,7 +69,7 @@ const Testimonials = () => {
                   </div>
                 </div>
                 <p className="text-[#2b7179] font-[200] text-lg font-recoletaMeduim mb-3 text-center">
-                  <i className="text-[#146d77] text-2xl pr-1">&#8220; </i>
+                  <i className="text-[#146d77] text-2xl pr-1">&#8220;</i>
                   {testimonial.content}
                   <i className="text-[#125e66] text-2xl">&#8221;</i>
                 </p>
