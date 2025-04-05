@@ -57,27 +57,36 @@ export default function SkillsComp() {
             About Me
           </h1>
           {/* Actual content header */}
-          <h1 className="relative font-recoletaBlack text-5xl text-[#00474F] mb-5 -mt-40 px-5 lg:px-40">
+          <h1 className="relative font-recoletaBlack text-5xl text-[#00474F] mb-5 -mt-40 px-5 lg:px-28">
             About My Self
           </h1>
-          <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#3e6d72] text-2xl mb-10 px-5 lg:px-40">
+          <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#3e6d72] text-2xl mb-10 px-5 lg:px-28">
             I craft solutions that push boundaries and unlock new possibilities.
           </h4>
-          <section className="relative flex flex-col lg:flex-row px-5 lg:px-40">
+          <section className="relative flex flex-col lg:flex-row px-5 lg:px-28">
             <p
               className={`w-full lg:w-1/3 text-[#3e6d72] mr-0 mb-5 lg:mr-4 font-[200] ${hind.className}`}
             >
-              I'm Pavan Manikanta, driven by a deep passion for AI and machine learning. I love building intelligent systems that extract meaningful insights from complex data, and I relish working on projects involving advanced predictive analytics, natural language processing, and deep learning.
+              I'm Pavan Manikanta, driven by a deep passion for AI and machine
+              learning. I love building intelligent systems that extract meaningful
+              insights from complex data, and I relish working on projects involving
+              advanced predictive analytics, natural language processing, and deep learning.
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#3e6d72] mr-0 mb-5 lg:mr-4 font-[200] ${hind.className}`}
             >
-              Alongside my focus on AI, I bring a broad technical background to the table. I'm skilled in web development, database management, containerization with Docker, and setting up CI/CD pipelines—enabling me to create cutting-edge AI solutions that integrate smoothly into full-scale, production-ready systems.
+              Alongside my focus on AI, I bring a broad technical background to the table.
+              I'm skilled in web development, database management, containerization with Docker,
+              and setting up CI/CD pipelines—enabling me to create cutting-edge AI solutions that
+              integrate smoothly into full-scale, production-ready systems.
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#3e6d72] mr-0 mb-5 lg:mr-4 font-[200] ${hind.className}`}
             >
-             Whenever I face a new challenge, I dive deep into research to understand it thoroughly and discover cutting-edge strategies to address similar issues in the future. As a result, I've honed a diverse array of abilities to tackle any problem head-on.
+              Whenever I face a new challenge, I dive deep into research to understand it
+              thoroughly and discover cutting-edge strategies to address similar issues in the
+              future. As a result, I've honed a diverse array of abilities to tackle any problem
+              head-on.
             </p>
           </section>
         </div>
@@ -85,12 +94,12 @@ export default function SkillsComp() {
 
       <div
         style={{
-          backgroundImage: "linear-gradient(45deg, #090909  70%, #141414 30%)",
+          backgroundImage: "linear-gradient(45deg, #090909 70%, #141414 30%)",
           width: "100%",
         }}
         className="lg:-mt-60"
       >
-        <section className="container flex flex-col m-auto sm:flex-row px-5 lg:px-40 mt-[40px] transform translate-y-[-100px]">
+        <section className="container flex flex-col m-auto sm:flex-row px-5 lg:px-28 xl:px-32 mt-[40px] transform translate-y-[-100px]">
           <div className="hidden sm:flex w-full sm:w-1/2 lg:w-7/12">
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mr-0 lg:mr-10">
               {AboutData.map((item, index) => (
@@ -135,9 +144,7 @@ export default function SkillsComp() {
           <div className="w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
             <div className="bg-[#202020] lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
               <section
-                className={`fade-left overflow-hidden ${
-                  isFaded ? "fade-out" : ""
-                }`}
+                className={`fade-left overflow-hidden ${isFaded ? "fade-out" : ""}`}
               >
                 <p
                   className={`text-[#3e6d72] ${hind.className} text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100`}
