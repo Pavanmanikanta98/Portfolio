@@ -39,7 +39,7 @@ export default function SocialMeida() {
           </svg>
         </a>
         <a
-          href="#"
+          href="https://x.com/pavan0098"
           className="text-gray-300 hover:text-[#999] transition-colors duration"
         >
           <svg
@@ -72,7 +72,7 @@ export default function SocialMeida() {
                 </svg>
               </a> */}
         <a
-          href="https://gmail.com/pavanmanikanta98"
+          href="mailto:pavanmanikanta45@gmail.com"
           className="text-gray-300 hover:text-[#999] transition-colors duration"
         >
           <svg

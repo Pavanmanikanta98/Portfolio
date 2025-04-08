@@ -174,7 +174,7 @@ export const DataArray = [
     des: "Description will Updated soon",
     des1: "",
     //need to add images
-    images: ["/docker.png", ""],
+    images: ["/skincare01.png", "/skincare03.png","","/skincare04.png"],
     githubLink : 'https://github.com/Pavanmanikanta98/RawNeural',
     websiteLink : 'https://github.com/Pavanmanikanta98/RawNeural',
     techStack: ["TensorFlow", "Pandas", "YOLO8", "Resnet50","SK-learn","Gradio"],
