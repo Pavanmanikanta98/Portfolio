@@ -87,8 +87,8 @@ export default function HomeComponent() {
                   Projects
                 </a>
                 <a
-                  href="pavan_resume.pdf"
-                  download
+                  href="Pavan Manikanta.pdf"
+                  download = 'Pavan Manikanta.pdf'
                   className="bg-[#102224] text-[#999] py-2 px-5 rounded-xl hover:bg-[#00474f] hover:text-black"
                 >
                   My Resume
