@@ -136,7 +136,7 @@ export default function Index({ data, id, relatedProjects }) {
               >
                 <Image
                   src={item}
-                  alt="project images"
+                  alt="project images will be update soon"
                   loading="lazy"
                   className="mt-20 rounded-lg w-full h-auto"
                   width={1200} // Increased from 800

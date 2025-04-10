@@ -109,7 +109,7 @@ export const WebArray = [
 
     des1: " The application utilizes secure authentication for the initial login via phone number, with a PIN required to confirm transactions. I architected dual backends using Node.js and Express.js to handle secure transactions and frontend interactions, implementing stringent security protocols for scalability and reliability. By championing ACID principles, the application guarantees data integrity and reliable processing of concurrent transactions. This robust architecture ensures smooth interactions within the application. Tech Stack Note: We have no access to real-world banks, so I created a few fake endpoints for demonstration purposes. The application's performance and scalability may vary depending on the actual implementation with real banking systems. ",
     //need to add images
-    images: ["/nextjs.png"],
+    images: ["/tet.png"],
     id:"512"
   },
   {
@@ -118,18 +118,18 @@ export const WebArray = [
     des: "I developed TextEvo to create an advanced text summarization application leveraging natural language processing. This application allows users to input lengthy texts and receive concise summaries, making it easier to grasp essential information quickly.",
     des1: "TextEvo utilizes the Hugging Face API to deliver accurate and efficient text summarization. The frontend is built with HTML, CSS, and JavaScript, providing a user-friendly interface for data input and summary display. This small project is designed to be simple yet effective, ensuring users can easily navigate and utilize the summarization features.",
 //need to add images
-    images: ["/docker.png", ""],
+    images: ["/tet.png", ""],
     id:"513"
   },
-  {
-    title: "Real Estate and Property Management Project",
-    name: "Inans Property Management ",
-    des: "We built this project for inans group LTD",
-    des1: "Aside from its gorgeous design, this website is backed by an outstanding plugin that allows owners and agencies to simply display different properties in the neighbourhood and create an online showcase in an appealing manner for home buyers and tenants..",
+  // {
+  //   title: "Real Estate and Property Management Project",
+  //   name: "Inans Property Management ",
+  //   des: "We built this project for inans group LTD",
+  //   des1: "Aside from its gorgeous design, this website is backed by an outstanding plugin that allows owners and agencies to simply display different properties in the neighbourhood and create an online showcase in an appealing manner for home buyers and tenants..",
 
-    images: ["/mongodb.png"],
-    id:"514"
-  },
+  //   images: ["/mongodb.png"],
+  //   id:"514"
+  // },
   {
     title: "Cloning Medium: A Blogging Platform for the Modern Web",
     name: "Cloning Medium: A Blogging Platform for the Modern Web",
@@ -137,8 +137,8 @@ export const WebArray = [
     des1: "To bring my Medium clone to life, I utilized a tech stack that includes React for the frontend, Recoil for state management, Hono.js for the backend, and Cloudflare Workers for deployment. This combination allows for a scalable and performant application capable of handling numerous users and content. Cloudflare Workers ensure efficient content delivery through their global CDN, providing low latency and high availability for users worldwide. This setup enables the development of a feature-rich blogging platform that closely resembles the original Medium while enhancing the user experience.",
  
     //need to add images
-    images: ["/redux.png", "", ""],
-    id:"515"
+    images: ["/signup.png", "/creat-blog.png", "/mainblogs.png","/author_oage.png","/skelton.png"],
+    id:"514"
   },
 ];
 
